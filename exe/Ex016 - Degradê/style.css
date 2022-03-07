@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+h1 {
+    font: bolder 3em 'work sans', sans-serif ;;
+}
+
+h2 {
+    font-size: 2em;
+    font: normal 2em 'work sans', sans-serif
+}
+
+p {
+   font-size: 1.05em;
+}
+
+body {
+    background-image: linear-gradient(to right, #1D102E, #132E71, #210977);
+}
+
+main {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin:auto
+}

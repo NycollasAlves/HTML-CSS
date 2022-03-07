@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia in HTML 5</title>
+</head>
+<body>
+    <h1>Dynamic Image</h1>
+    <p>Opening media on diferent devices</p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="image/image-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="image/image-m.png" type="image/png">
+        <img src="image/image_g.png" alt="foto g">
+    </picture>
+    <video src="video/Chuunibyou.mp4" controls autoplay width="420" height="340"></video>
+    <audio preload="metadata" controls autoplay loop
+        source src="audio/game-of-thrones.mp3" type="audio/mpeg">
+    ></audio>
+    
+    <p>Se o seu Navegador não carregar o audio <a href="audio/game-of-thrones.mp3">Click NO LINK para baixar
+    no Formato MP3</a></p>
+</body>
+</html>
