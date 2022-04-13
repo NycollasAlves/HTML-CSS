@@ -13,6 +13,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         th, td {
@@ -21,8 +22,25 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(102, 101, 101);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(102, 101, 101);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: gray;
+        }
+
+        caption {
+            background-color: rgb(181, 181, 181);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 1.5em;
         }
 
         .num {
@@ -35,10 +53,11 @@
         Trabalhando Com Tabelas Grandes
     </h1>
     <table>
+        <caption>População Do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -153,7 +172,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210 147 125 00</strong></td>
             </tr>
         </tfoot>
